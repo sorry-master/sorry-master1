@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>随机跳转</title>
+    <title>问卷随机分配</title>
     <script>
         window.onload = function() {
-            // 定义 4 个不同的网址（替换为你的实际链接）
             var links = [
-                "https://www.wjx.cn/vm/rPw7Kim.aspx# ",
-                "https://www.wjx.cn/vm/tqDhTFL.aspx# ",
-                "https://www.wjx.cn/vm/t2LDT0F.aspx# ",
-                "https://www.wjx.cn/vm/mBPbGUZ.aspx# "
+                "https://www.wjx.cn/vm/rPw7Kim.aspx# ",  // 问卷 A
+                "https://www.wjx.cn/vm/t2LDT0F.aspx# ,  // 问卷 B
+                "https://www.wjx.cn/vm/tqDhTFL.aspx# ",  // 问卷 C
+                "https://www.wjx.cn/vm/mBPbGUZ.aspx# "   // 问卷 D
             ];
-            
-            // 生成 0-3 之间的随机索引
             var randomIndex = Math.floor(Math.random() * links.length);
-            
-            // 跳转到随机选择的网址
             window.location.href = links[randomIndex];
         };
     </script>
 </head>
 <body>
-    <p>正在为您随机分配页面，请稍候...</p>
+    <p>正在为您随机分配问卷，请稍候...</p>
 </body>
 </html>
